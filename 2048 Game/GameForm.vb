@@ -3,7 +3,6 @@
     Private Declare Function SendMessageA Lib "user32" (ByVal hwnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, lParam As VariantType) As Integer
 
     Private Const TitleHeight As Integer = 40 '标题栏高度
-    Private Const MarginSize As Integer = 10 '卡片之间的间距
     Private Const PaddingSize As Integer = 60 '裁片集中区域与窗体边框的距离
     Dim Score As Integer = 0 '分数
     Dim Moved As Boolean '定义一个标识，记录是否发生了移动，以确定操作是否有效
