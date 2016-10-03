@@ -10,6 +10,14 @@
     Dim CardData(3, 3) As Long
 
     Private Sub GameForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim DirectiionKeyBitmap As Bitmap = My.Resources._2048Resource.DirectiionKey
+        DirectiionKeyBitmap.RotateFlip(RotateFlipType.Rotate90FlipNone)
+        KeyUpLabel.Image = DirectiionKeyBitmap.Clone
+        DirectiionKeyBitmap.RotateFlip(RotateFlipType.Rotate90FlipNone)
+        KeyRightLabel.Image = DirectiionKeyBitmap.Clone
+        DirectiionKeyBitmap.RotateFlip(RotateFlipType.Rotate90FlipNone)
+        KeyDownLabel.Image = DirectiionKeyBitmap.Clone
+
         CreatNewCard()
         DrawForm()
     End Sub
@@ -264,4 +272,12 @@
         SendMessageA(Me.Handle, &HA1, 2, 0&)
     End Sub
 
+    ''' <summary>
+    ''' 鼠标点击方向按钮
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub KeyLabel_Click(sender As Object, e As EventArgs) Handles KeyUpLabel.Click, KeyDownLabel.Click, KeyLeftLabel.Click, KeyRightLabel.Click
+        ApplyCardsChange(CType(sender, Label).Tag)
+    End Sub
 End Class
