@@ -110,7 +110,7 @@ Partial Class GameForm
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "GameForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "2048"
         Me.ResumeLayout(False)
 
     End Sub
