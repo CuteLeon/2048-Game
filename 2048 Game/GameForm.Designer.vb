@@ -28,6 +28,7 @@ Partial Class GameForm
         Me.KeyDownLabel = New System.Windows.Forms.Label()
         Me.KeyLeftLabel = New System.Windows.Forms.Label()
         Me.KeyRightLabel = New System.Windows.Forms.Label()
+        Me.CloseButton = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ScoreLabel
@@ -94,12 +95,22 @@ Partial Class GameForm
         Me.KeyRightLabel.Tag = "39"
         Me.KeyRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'CloseButton
+        '
+        Me.CloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.CloseButton.Image = Global._2048_Game.My.Resources._2048Resource.GameClose_0
+        Me.CloseButton.Location = New System.Drawing.Point(372, 9)
+        Me.CloseButton.Name = "CloseButton"
+        Me.CloseButton.Size = New System.Drawing.Size(25, 25)
+        Me.CloseButton.TabIndex = 7
+        '
         'GameForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global._2048_Game.My.Resources._2048Resource.Background
         Me.ClientSize = New System.Drawing.Size(400, 540)
+        Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.KeyRightLabel)
         Me.Controls.Add(Me.KeyLeftLabel)
         Me.Controls.Add(Me.KeyDownLabel)
@@ -120,4 +131,5 @@ Partial Class GameForm
     Friend WithEvents KeyDownLabel As Label
     Friend WithEvents KeyLeftLabel As Label
     Friend WithEvents KeyRightLabel As Label
+    Friend WithEvents CloseButton As Label
 End Class
