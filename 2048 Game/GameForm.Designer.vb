@@ -34,14 +34,14 @@ Partial Class GameForm
         'ScoreLabel
         '
         Me.ScoreLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ScoreLabel.Font = New System.Drawing.Font("微软雅黑", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.ScoreLabel.ForeColor = System.Drawing.Color.Gray
-        Me.ScoreLabel.Location = New System.Drawing.Point(275, 38)
+        Me.ScoreLabel.Font = New System.Drawing.Font("微软雅黑", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ScoreLabel.ForeColor = System.Drawing.Color.DimGray
+        Me.ScoreLabel.Location = New System.Drawing.Point(263, 46)
         Me.ScoreLabel.Name = "ScoreLabel"
-        Me.ScoreLabel.Size = New System.Drawing.Size(115, 40)
+        Me.ScoreLabel.Size = New System.Drawing.Size(120, 32)
         Me.ScoreLabel.TabIndex = 0
         Me.ScoreLabel.Text = "0"
-        Me.ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'KeyUpLabel
         '
@@ -99,7 +99,7 @@ Partial Class GameForm
         '
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.Image = Global._2048_Game.My.Resources._2048Resource.GameClose_0
-        Me.CloseButton.Location = New System.Drawing.Point(372, 9)
+        Me.CloseButton.Location = New System.Drawing.Point(365, 9)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.Size = New System.Drawing.Size(25, 25)
         Me.CloseButton.TabIndex = 7
